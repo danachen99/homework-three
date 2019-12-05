@@ -1,0 +1,14 @@
+.container {
+    border: 2px solid;
+    width: 100%;
+    background-color: lavender;
+    margin: 20px auto;
+}
+
+#password {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
