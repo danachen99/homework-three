@@ -2,7 +2,7 @@ var lengthEl = document.querySelector("#length");
 var submit = document.querySelector("#submit");
 var displayBox = document.querySelector("#password");
 
-submit.addEventListener("click", function() {
+submit.addEventListener("click", function(event) {
     event.preventDefault();
 
     var passCharacters = "QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890!@#$%^&*()-_=+";
@@ -16,6 +16,7 @@ submit.addEventListener("click", function() {
             password = password + passCharacters.charAt(Math.floor(Math.random() * Math.floor(passCharacters.length - 1)));
         }
         console.log(password);
+        displayBox.value = password;
     } else {
         alert("Invalid entry");
     }
