@@ -23,5 +23,7 @@ submit.addEventListener("click", function(event) {
 });
 
 copy.addEventListener("click", function() {
-
+    document.getElementById("password").select();
+    document.execCommand("Copy");
+    alert("Your password " + displayBox.value + " has been copied!");
 });
