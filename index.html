@@ -18,13 +18,24 @@
         <div class="row">
             <div class="col-lg-8 col-sm-12 mx-auto">
                 <h1>Password Generator</h1>
-                <input type="text" id="password">
-                <h4>Enter the password length</h4>
+                <textarea type="text" id="password" rows="5" placeholder="Your secure password"></textarea>
+                <h5>Enter the password length</h5>
                 <form id="form">
-                    <input type="text" id="length" placeholder="enter number between 8 and 128">
-                    <button type="button" class="btn btn-success" id="submit">Generate Password</button>
+                    <input type="text" id="length" placeholder="Enter a number between 8 and 128">
+                    <div class="row">
+                        <div class="col-md-6" style="margin-bottom: 5px;">
+                            <button type="button" class="btn btn-danger" id="submit">Generate Password</button>
+                        </div>
+                        <div class="col-md-6" style="margin-bottom: 5px;">
+                            <button type="button" class="btn btn-success" id="copy">Copy to clipboard</button>
+                        </div>
+                    </div>
                 </form>
             </div>
+
+        </div>
+        <div class="row">
+
         </div>
     </div>
 

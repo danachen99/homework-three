@@ -3,12 +3,27 @@
     width: 100%;
     background-color: lavender;
     margin: 20px auto;
+    padding: 20px;
 }
 
 #password {
     width: 100%;
 }
 
-h1 {
+h1,
+h5 {
     text-align: center;
 }
+
+#password,
+#length {
+    width: 100%;
+    border: dashed 1px gray;
+    margin: 8px auto;
+}
+
+
+/*
+#password {
+    height: 100px;
+}*/
